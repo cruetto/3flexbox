@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capibaras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background: #092d95;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: calc(33.33% - 10px);
+            max-width: 300px;
+            height: auto;
+        }
+        @media (max-width: 900px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">CSS FLEX BOX PHOTO GALLERY</div>
+    <div class="gallery">
+        <img src="images/1.jpeg" alt="Capibara 1">
+        <img src="images/2.jpeg" alt="Capibara 2">
+        <img src="images/3.jpeg" alt="Capibara 3">
+        <img src="images/4.jpeg" alt="Capibara 4">
+        <img src="images/5.jpeg" alt="Capibara 5">
+        <img src="images/6.jpeg" alt="Capibara 6">
+        <img src="images/7.jpeg" alt="Capibara 7">
+        <img src="images/8.jpeg" alt="Capibara 8">
+        <img src="images/9.jpeg" alt="Capibara 9">
+    </div>
+</body>
+</html>
